@@ -1,29 +1,31 @@
+#ifndef CHAOS_HPP
+#define CHAOS_HPP
 
-#ifndef DEBUG
-#define DEBUG
-
-#include <iostream>
+#include <tuple>
 #include <vector>
 
 #include "point.hpp"
 
 using namespace std;
 
-/*
- *  Used for each pixel in the 'Grid' class to store data.
- */
-namespace chaos {
+namespace grid {
+    struct Collision {
+        Point point;
+        int iteration;
+    };
+
+    /*
+     *  Stores information of each point in the 'Grid'.
+     */
     struct Chaos {
         Point grid_point;
 
-        // store all the collisions, the first component is the displacement from the original point
+        // the first component is the displacement from the original point
         // the second component is the current number of iterations
-        vector<tuple<Point, int>> collisions;
-
-        Chaos(int row, int col) {
-            grid_point = Point(row, col);
-        }
+        vector<Collision> collisions;
     };
-}
 
-#endif // !DEBUG
+
+}  // namespace grid
+
+#endif  // !CHAOS_HPP

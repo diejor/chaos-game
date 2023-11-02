@@ -1,13 +1,29 @@
 #include <iostream>
 
-using namespace std;
-
 #include "input.hpp"
 #include "output.hpp"
 
+#include "grid.hpp"
+#include "point.hpp"
+#include "experiments.hpp"
+#include "ppm_stream.hpp"
+#include "rgb_mapping.hpp"
+
+using namespace std;
+using namespace grid;
+using namespace rgb_mapping;
+
 int main() {
-    int number = input::integer("Enter a number: ");
-    string is_even = number % 2 == 0 ? "even" : "odd"; 
-    output::boxed_centered(is_even, 20);
+    Point p1 = Point(0, 99);
+    Point p2 = Point(199, 0);
+    Point p3 = Point(199, 199);
+    vector<Point> starting_points = {p1, p2, p3};
+
+    Grid grid = Grid(200, 200);
+    experiments::run(starting_points, grid, 100000);
+
+    vector<vector<RGB>> rgb_grid = grid_to_rgb(grid, existential);
+    ppm_stream::output_experiment(rgb_grid);
+
     return 0;
 }

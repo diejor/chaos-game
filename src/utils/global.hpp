@@ -23,7 +23,6 @@
 
 #include <iostream>
 #include <string>
-#include <tuple>
 #include <vector>
 
 using namespace std;
@@ -40,48 +39,14 @@ namespace global {
 
     namespace debug_flags {
         const bool stop_flow = false;
-/* 
- * =====================================================================================
- *  Author: Diego R.R.
- *  Course: CS2337.501
- *  Description: 
- *      - This header file contains global constants and functions used throughout the 
- *        program.
- *      - To enable debugging tools, simply set the appropriate flag inside the 
- *        `debug_flags` namespace to `true`.
- *
- *  Changelog:
- *  -------------------------------------------------------------------------------------
- *      Date        |               Changes
- *  -------------------------------------------------------------------------------------
- *  10/29/2023     | Changed to implement animal guessing homework.
- *  10/30/2023     | Added debug flags.
- *  10/31/2023     | trim_whitespace fixed to handle empty strings.
- *  =====================================================================================
- */
-        // main
-        const bool INIT_VECTOR = false;
-        const bool INIT_VECTOR_ADDING = false;
 
         // user input
         const bool TRIM_WHITESPACE = false;
         const bool USER_INPUT = false;
 
-        // parser
-        const bool EMPTY_FILE = false;
-        const bool IGNORING_COMMENT_LINE = false;
-        const bool TOKEN_LINE = false;
-
-        // data
-        const bool NODE_CREATED = false;
-
-        // guessing
-        const bool INSPECTING_NODE = false;
-        const bool FLIPPING = false;
-
-        // printing
-        const bool PRINT_STEP = false;
-
+        // grid
+        const bool MIDDLE_POINT = false;
+        const bool COLLISIONS = false;
     }  // namespace debug_flags
     // =----------------- END OF CONSTANTS -----------------=
     // ------------------------------------------------------

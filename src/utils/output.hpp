@@ -29,12 +29,10 @@
 #ifndef OUTPUT_HPP
 #define OUTPUT_HPP
 
-#include <fstream>
-#include <iomanip>
 #include <iostream>
 #include <string>
-#include <tuple>
 #include <vector>
+
 #include "global.hpp"
 
 using namespace std;
@@ -88,22 +86,7 @@ namespace output {
         cout << "  ~  " << msg << endl;
     }
 
-    // Welcome message when the program starts
-    inline void welcome() {
-        cout << global::msgs::PROGRAM_TITLE << endl;
-    }
-
     // Display a message when the game initializes
-    inline void init_game() {
-        cout << global::msgs::INIT_GAME << endl;
-        separate();
-    }
-
-    // Goodbye message when the program ends
-    inline void goodbye() {
-        cout << global::msgs::GOODBYE << endl;
-    }
-
     // Display options and prompt user to make a selection
     inline void select(const string& msg, const vector<string>& options) {
         cout << msg << " (select a number)" << endl;
