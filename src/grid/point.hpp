@@ -2,6 +2,9 @@
 #define POINT_HPP
 
 #include <string>
+#include <vector>
+
+using namespace std;
 
 namespace grid {
     struct Point {
@@ -15,8 +18,12 @@ namespace grid {
         Point dsplcmt_to_middle(const Point& other) const;
         Point middle(const Point& other) const;
 
+        Point rotate(int degrees) const;
+
         std::string to_string() const;
     };
+
+    vector<Point> polygon(const Point& center, int num_rotations, int radius);
 }  // namespace grid
 
-#endif // !POINT_HPP
+#endif  // !POINT_HPP

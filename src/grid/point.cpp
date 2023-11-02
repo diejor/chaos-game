@@ -1,3 +1,4 @@
+#include <cmath>
 #include "string"
 
 
@@ -49,8 +50,28 @@ namespace grid {
         return displacement;
     }
 
+    Point Point::rotate(int degrees) const {
+        Point result;
+        double radians = degrees * M_PI / 180.0;
+        result.col = col * cos(radians) - row * sin(radians);
+        result.row = col * sin(radians) + row * cos(radians);
+        return result;
+    }
+
     string Point::to_string() const {
         string result = "(" + std::to_string(row) + ", " + std::to_string(col) + ")";
+        return result;
+    }
+
+    vector<Point> polygon(const Point& center, int num_rotations, int radius) {
+        vector<Point> result;
+        int step_degree = 360 / num_rotations;
+        for (int i = 0; i < num_rotations; i++) {
+            Point radius_point = Point(0, radius);
+            Point p = Point(-radius,0).rotate(step_degree * i);
+            p = p.add(center);
+            result.push_back(p);
+        }
         return result;
     }
 }  // namespace grid

@@ -22,7 +22,9 @@ namespace ppm_stream {
     const int MAX_COLOR = 255;
 
     void write_comment(ofstream &out_file, const string &comment) {
-        out_file << "# " << comment << endl;
+        // Commented out because it's not necessary for the ppm file to be valid.
+        // and some image viewers dont support comments.
+        // out_file << "# " << comment << endl;
     }
 
     void write_magic_num(ofstream &out_file, const string &magic_num) {
@@ -64,5 +66,6 @@ namespace ppm_stream {
             ppm_file << endl;
         }
         ppm_file.close();
+        output::inform("Done!");
     }
 }
