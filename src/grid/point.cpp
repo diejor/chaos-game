@@ -19,7 +19,7 @@ namespace grid {
             }
         }
     }  // namespace debug
-
+    
     Point Point::add(const Point& other) const {
         Point result;
         result.row = row + other.row;

@@ -11,6 +11,22 @@ namespace grid {
         int row;
         int col;
 
+        Point() {
+            row = 0;
+            col = 0;
+        }
+
+        Point(int row, int col) {
+            this->row = row;
+            this->col = col;
+        }
+
+
+        Point(Point const& other) {
+            row = other.row;
+            col = other.col;
+        }
+
         Point add(const Point& other) const;
         Point subtract(const Point& other) const;
 

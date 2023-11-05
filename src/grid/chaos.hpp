@@ -12,6 +12,16 @@ namespace grid {
     struct Collision {
         Point point;
         int iteration;
+
+        Collision() {
+            point = Point();
+            iteration = 0;
+        }
+
+        Collision(Point point, int iteration) {
+            this->point = point;
+            this->iteration = iteration;
+        }
     };
 
     /*
@@ -25,6 +35,16 @@ namespace grid {
         vector<Collision> collisions;
 
         unsigned int accumulation;
+
+        Chaos() {
+            grid_point = Point();
+            accumulation = 0;
+        }
+
+        Chaos(Point grid_point) {
+            this->grid_point = grid_point;
+            accumulation = 0;
+        }
     };
 
 }  // namespace grid
