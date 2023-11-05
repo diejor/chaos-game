@@ -23,8 +23,9 @@ namespace grid {
         // the first component is the displacement from the original point
         // the second component is the current number of iterations
         vector<Collision> collisions;
-    };
 
+        unsigned int accumulation;
+    };
 
 }  // namespace grid
 

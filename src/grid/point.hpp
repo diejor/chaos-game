@@ -15,10 +15,12 @@ namespace grid {
         Point subtract(const Point& other) const;
 
         Point displacement(const Point& other) const;
-        Point dsplcmt_to_middle(const Point& other) const;
-        Point middle(const Point& other) const;
+        Point displacement_by(const Point& other, int ths) const;
 
         Point rotate(int degrees) const;
+        double distance(const Point& other) const;
+
+        bool operator==(const Point& other) const;
 
         std::string to_string() const;
     };

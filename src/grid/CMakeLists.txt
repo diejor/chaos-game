@@ -2,6 +2,7 @@ add_library(grid
     grid.cpp
     point.cpp
     chaos.cpp
+    polygon.cpp
 )
 
 target_link_libraries(grid PRIVATE 

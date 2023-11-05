@@ -198,6 +198,11 @@ namespace input {
         int input = integer_within_range("Enter your selection: ", 1, options.size());
         return input;
     }
+
+    inline bool yes_or_no(const string& msg) {
+        string input = line(msg + " (y/n): ");
+        return global::fncs::contains(input, "y");
+    }
 }  // namespace input
 
 #endif  // INPUT_HPP

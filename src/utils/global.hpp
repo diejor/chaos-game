@@ -40,6 +40,10 @@ namespace global {
     namespace debug_flags {
         const bool stop_flow = false;
 
+        // experiments
+        const bool EXPERIMENT_BEFORE = false;
+        const bool EXPERIMENT_AFTER = false;
+
         // user input
         const bool TRIM_WHITESPACE = false;
         const bool USER_INPUT = false;
