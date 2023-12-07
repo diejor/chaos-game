@@ -12,7 +12,7 @@ The user will be prompted to enter various parameters for the experiments, such 
 4. Tracing Path
 
 ## Experiment Images
-Each image's name provides information about the polygon used, whether vertices are repeated, the type of experiment, the percentage used for displacement, and the number of iterations. Some information might be excluded if not relevant to the experiment.
+I provided from sample experiments, but the program was designed to experiment with the parameters to create experiments. Each image's name provides information about the polygon used, whether vertices are repeated, the type of experiment, the percentage used for displacement, and the number of iterations. Some information might be excluded if not relevant to the experiment.
 
 ### Heptagon Experiments
 - **Heptagon No-Repeat Distance 50% 100k**
