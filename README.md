@@ -14,6 +14,23 @@ The user will be prompted to enter various parameters for the experiments, such 
 ## Experiment Images
 Each image's name provides information about the polygon used, whether vertices are repeated, the type of experiment, the percentage used for displacement, and the number of iterations. Some information might be excluded if not relevant to the experiment.
 
+### Heptagon Experiments
+- **Heptagon No-Repeat Distance 50% 100k**
+  ![Heptagon No-Repeat Distance 50% 100k](./experiments/images/heptagon-norepeat-dist-50-100k.jpg)
+  - **Polygon:** Heptagon
+  - **Repeats Vertices:** No
+  - **Experiment:** Distance to Center
+  - **Displacement:** 50%
+  - **Iterations:** 100k
+
+### Hexagon Experiments
+- **Hexagon Trace 100k**
+  ![Hexagon Trace 100k](./experiments/images/hexagon-trace-100k.jpg)
+  - **Polygon:** Hexagon
+  - **Repeats Vertices:** [Specify if applicable]
+  - **Experiment:** Tracing Path
+  - **Iterations:** 100k
+
 ### Pentagon Experiments
 - **Pentagon No-Repeat Distance 60% 100k**
   ![Pentagon No-Repeat Distance 60% 100k](./experiments/images/pentagon-norepeat-dist-60-100k.jpg)
@@ -21,6 +38,13 @@ Each image's name provides information about the polygon used, whether vertices 
   - **Repeats Vertices:** Yes
   - **Experiment:** Distance to Center
   - **Displacement:** 60%
+  - **Iterations:** 100k
+  
+- **Pentagon No-Repeat Time 100k**
+  ![Pentagon No-Repeat Time 100k](./experiments/images/pentagon-norepeat-time-100k.jpg)
+  - **Polygon:** Pentagon
+  - **Repeats Vertices:** No
+  - **Experiment:** Time Taken to Reach a Point
   - **Iterations:** 100k
 
 ### Square Experiments
@@ -30,6 +54,13 @@ Each image's name provides information about the polygon used, whether vertices 
   - **Repeats Vertices:** Yes
   - **Experiment:** Simple (Assuming simple is an experiment type)
   - **Iterations:** 100k
+ 
+- **Square Trace 1k**
+  ![Square Trace 1k](./experiments/images/square-trace-1k.jpg)
+  - **Polygon:** Square
+  - **Repeats Vertices:** [Specify if applicable]
+  - **Experiment:** Tracing Path
+  - **Iterations:** 1k
 
 - **Square Time 66 1M**
   ![Square Time 66 1M](./experiments/images/square-time-66-1M.jpg)
