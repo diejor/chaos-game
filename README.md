@@ -18,7 +18,7 @@ Each image's name provides information about the polygon used, whether vertices 
 - **Pentagon No-Repeat Distance 60% 100k**
   ![Pentagon No-Repeat Distance 60% 100k](./experiments/images/pentagon-norepeat-dist-60-100k.jpg)
   - **Polygon:** Pentagon
-  - **Repeats Vertices:** No
+  - **Repeats Vertices:** Yes
   - **Experiment:** Distance to Center
   - **Displacement:** 60%
   - **Iterations:** 100k
@@ -27,14 +27,14 @@ Each image's name provides information about the polygon used, whether vertices 
 - **Square Simple 100k**
   ![Square Simple 100k](./experiments/images/square-simple-100k.jpg)
   - **Polygon:** Square
-  - **Repeats Vertices:** [Specify if applicable]
+  - **Repeats Vertices:** Yes
   - **Experiment:** Simple (Assuming simple is an experiment type)
   - **Iterations:** 100k
 
 - **Square Time 66 1M**
   ![Square Time 66 1M](./experiments/images/square-time-66-1M.jpg)
   - **Polygon:** Square
-  - **Repeats Vertices:** [Specify if applicable]
+  - **Repeats Vertices:** No
   - **Experiment:** Time Taken to Reach a Point
   - **Displacement:** 66% (If applicable)
   - **Iterations:** 1M
@@ -43,7 +43,7 @@ Each image's name provides information about the polygon used, whether vertices 
 - **Triangle Distance 50% 100k**
   ![Triangle Distance 50% 100k](./experiments/images/triangle-dist-50-100k.jpg)
   - **Polygon:** Triangle
-  - **Repeats Vertices:** No
+  - **Repeats Vertices:** Yes
   - **Experiment:** Distance to Center
   - **Displacement:** 50%
   - **Iterations:** 100k
@@ -51,7 +51,7 @@ Each image's name provides information about the polygon used, whether vertices 
 - **Triangle Trace 1k**
   ![Triangle Trace 1k](./experiments/images/triangle-trace-1k.jpg)
   - **Polygon:** Triangle
-  - **Repeats Vertices:** [Specify if applicable]
+  - **Repeats Vertices:** Yes
   - **Experiment:** Tracing Path
   - **Iterations:** 1k
 
