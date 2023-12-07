@@ -23,14 +23,6 @@ Each image's name provides information about the polygon used, whether vertices 
   - **Displacement:** 50%
   - **Iterations:** 100k
 
-### Hexagon Experiments
-- **Hexagon Trace 100k**
-  ![Hexagon Trace 100k](./experiments/images/hexagon-trace-100k.jpg)
-  - **Polygon:** Hexagon
-  - **Repeats Vertices:** [Specify if applicable]
-  - **Experiment:** Tracing Path
-  - **Iterations:** 100k
-
 ### Pentagon Experiments
 - **Pentagon No-Repeat Distance 60% 100k**
   ![Pentagon No-Repeat Distance 60% 100k](./experiments/images/pentagon-norepeat-dist-60-100k.jpg)
